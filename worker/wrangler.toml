@@ -3,7 +3,7 @@ main = "worker.js"
 compatibility_date = "2026-11-25"
 
 [vars]
-GITHUB_OWNER = "ВАШЕ_ИМЯ_GITHUB"
-GITHUB_REPO = "НАЗВАНИЕ_РЕПОЗИТОРИЯ"
+GITHUB_OWNER = "mars-is-not-a-upiterrr"
+GITHUB_REPO = "pomoshnik-dlya-telefona"
 GITHUB_BRANCH = "main"
-ALLOWED_ORIGIN = "https://ВАШЕ_ИМЯ_GITHUB.github.io"
+ALLOWED_ORIGIN = "https://mars-is-not-a-upiterrr.github.io"
