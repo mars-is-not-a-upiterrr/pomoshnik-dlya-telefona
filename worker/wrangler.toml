@@ -1,0 +1,9 @@
+name = "pomoshnik-publisher"
+main = "worker.js"
+compatibility_date = "2026-11-25"
+
+[vars]
+GITHUB_OWNER = "ВАШЕ_ИМЯ_GITHUB"
+GITHUB_REPO = "НАЗВАНИЕ_РЕПОЗИТОРИЯ"
+GITHUB_BRANCH = "main"
+ALLOWED_ORIGIN = "https://ВАШЕ_ИМЯ_GITHUB.github.io"
