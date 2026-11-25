@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#2457d6">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Редактор — Помощник для телефона</title>
+  <script src="./admin.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="home-button link-home" href="./index.html" aria-label="К приложению">⌂</a>
+    <div class="brand">Редактор инструкций</div>
+  </header>
+  <main id="adminApp" class="app">
+    <section class="panel">
+      <h1>Управление инструкциями</h1>
+      <p>Здесь можно менять тексты и добавлять изображения. Для публикации потребуется настроить защищённый адрес Cloudflare Worker.</p>
+      <label class="field-label" for="workerUrl">Адрес Worker</label>
+      <input id="workerUrl" class="text-input" type="url" placeholder="https://имя.твой-аккаунт.workers.dev">
+      <label class="field-label" for="adminPassword">Пароль администратора</label>
+      <input id="adminPassword" class="text-input" type="password" autocomplete="current-password" placeholder="Пароль, заданный в Cloudflare">
+      <button id="loadButton" class="primary-button" type="button">Загрузить инструкции</button>
+      <p id="status" class="status" role="status">Сначала настрой Worker по инструкции в README.</p>
+    </section>
+    <section id="editor" class="panel hidden">
+      <div class="editor-heading">
+        <h2>Инструкции</h2>
+        <button id="newInstruction" class="secondary-button" type="button">＋ Новая инструкция</button>
+      </div>
+      <div id="instructionList"></div>
+      <button id="publishButton" class="primary-button" type="button">Опубликовать изменения</button>
+    </section>
+  </main>
+</body>
+</html>
