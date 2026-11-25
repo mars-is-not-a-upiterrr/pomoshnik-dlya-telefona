@@ -1,0 +1,16 @@
+{
+  "name": "Помощник для телефона",
+  "short_name": "Помощник",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f3f6ff",
+  "theme_color": "#2457d6",
+  "icons": [
+    {
+      "src": "./icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
